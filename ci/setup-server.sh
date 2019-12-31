@@ -10,7 +10,8 @@ cd /tmp/seafile-test-deploy
 # run seahub
 git clone --depth=1 --branch=master git://github.com/haiwen/seahub /tmp/seahub
 cd /tmp/seahub/
-pip install -r requirements.txt --allow-all-external --allow-unverified Djblets --allow-unverified PIL
+#pip install -r requirements.txt --allow-all-external --allow-unverified Djblets --allow-unverified PIL
+pip install -r requirements.txt Djblets PIL
 pip install -r test-requirements.txt
 cd /tmp/seahub/tests
 ./seahubtests.sh init
